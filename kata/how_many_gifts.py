@@ -1,6 +1,7 @@
 import unittest
 
 
+# solution
 def how_many_gifts(max_budget, gifts):
     if min(gifts) > max_budget:
         return 0
