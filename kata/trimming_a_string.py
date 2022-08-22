@@ -7,20 +7,20 @@ def trim(string, size):
 
 class TestMyDef(unittest.TestCase):
 
-    def test_1(self):
-        self.assertEqual(trim("Creating kata is fun", 1), "C...")
+    def test_8(self):
+        self.assertEqual(trim("He", 1), "H...")
 
-    def test_2(self):
-        self.assertEqual(trim("Creating kata is fun", 2), "Cr...")
+    def test_9(self):
+        self.assertEqual(trim("Hey", 2), "He...")
 
-    def test_3(self):
-        self.assertEqual(trim("Creating kata is fun", 3), "Cre...")
+    def test_10(self):
+        self.assertEqual(trim("Creating kata is fun", 4), "C...")
 
-    def test_4(self):
-        self.assertEqual(trim("Creating kata is fun", 4), "Creat...")
+    def test_11(self):
+        self.assertEqual(trim("Coding rocks", 12), "Coding rocks")
 
-    def test_5(self):
-        self.assertEqual(trim("Creating kata is fun", 11), "Creating...")
+    def test_12(self):
+        self.assertEqual(trim("Code Wars is pretty rad", 50), "Code Wars is pretty rad")
 
-    def test_6(self):
-        self.assertEqual(trim("Creating kata is fun", 14), "Creating ka...")
+    def test_13(self):
+        self.assertEqual(trim("London is freezing", 18), "London is freezing")
